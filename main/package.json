@@ -1,7 +1,6 @@
 {
-  "name": "main",
+  "name": "mainprocess",
   "version": "1.0.0",
-  "description": "",
   "main": "./src/electron.js",
   "scripts": {
     "start": "concurrently \"tsc ./src/electron.ts -w\" \"cross-env NODE_ENV=dev nodemon --exec \"\"wait-on http://localhost:3000 && electron src/electron.js\"\""
@@ -20,5 +19,6 @@
     "nodemon": "^1.19.3",
     "typescript": "^3.6.4",
     "wait-on": "^3.3.0"
-  }
+  },
+  "description": ""
 }
